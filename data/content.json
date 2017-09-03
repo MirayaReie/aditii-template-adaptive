@@ -1,0 +1,66 @@
+{
+  "subCarousel": {
+    "0": {
+      "title": "Branded Shoes",
+      "link": "#",
+      "image": "../../static/img/content/men-shoes.png"
+    },
+    "1": {
+      "title": "Branded Tshirts",
+      "link": "#",
+      "image": "../../static/img/content/tshirt.png"
+    },
+    "2": {
+      "title": "Branded Shoes",
+      "link": "#",
+      "image": "../../static/img/content/shorts.png"
+    },
+    "3": {
+      "title": "Branded Shoes",
+      "link": "#",
+      "image": "../../static/img/content/men-shoes.png"
+    },
+    "4": {
+      "title": "Branded Tshirts",
+      "link": "#",
+      "image": "../../static/img/content/tshirt.png"
+    },
+    "5": {
+      "title": "Branded Shoes",
+      "link": "#",
+      "image": "../../static/img/content/shorts.png"
+    }
+  },
+  "featured": {
+    "0": {
+      "image": "../../static/img/content/featured/1.png",
+      "title": "Branded Shoe",
+      "price": "$300"
+    },
+    "1": {
+      "image": "../../static/img/content/featured/2.png",
+      "title": "Branded Tees",
+      "price": "$300"
+    },
+    "2": {
+      "image": "../../static/img/content/featured/3.png",
+      "title": "Branded Shoe",
+      "price": "$300"
+    },
+    "3": {
+      "image": "../../static/img/content/featured/4.png",
+      "title": "Branded Shoe",
+      "price": "$300"
+    },
+    "4": {
+      "image": "../../static/img/content/featured/5.png",
+      "title": "EMS Women Bag",
+      "price": "$300"
+    },
+    "5": {
+      "image": "../../static/img/content/featured/6.png",
+      "title": "Branded Cargos",
+      "price": "$300"
+    }
+  }
+}

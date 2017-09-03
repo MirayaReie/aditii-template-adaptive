@@ -1,0 +1,93 @@
+@import '../components/main-carousel.styl'
+
+.sub-carousel
+  width 320px
+  
+  &__wrapper
+    display flex
+    justify-content space-evenly
+    overflow hidden
+    height 190px
+    width 100%
+    background #fff
+    
+    box-shadow 1px 2px 3px rgba(0, 0, 0, .13)
+  
+  &__arrow
+    display none
+    height 100%
+    width 80px
+    background none
+    border none
+  
+  &__prev
+    fill #dbdbdb
+    height 88px
+    
+    &:hover
+      fill #3cc395
+  
+  &__next
+    fill #dbdbdb
+    height 88px
+    transform rotate(180deg)
+    
+    &:hover
+      fill #3cc395
+  
+  &__item
+    margin 0 auto
+    height 190px
+    width 320px
+    outline none
+    overflow hidden
+
+  &__image
+    margin auto
+    
+    &-wrapper
+      margin-top 20px
+      overflow hidden
+      float left
+      height 151px
+      width 199px
+    
+  &__info
+    margin-top 52px
+    float left
+    width 120px
+    
+  &__title
+    margin-bottom 20px
+    font-family "Bebas"
+    font-size 27px
+    line-height 25px
+    color #a9a9a9
+  
+  &__shop-btn
+    display block
+    height 32px
+    width 59px
+    padding 6px 0
+    background #3dc090
+    border-radius 3px
+    
+    font-family "Bebas"
+    font-size 19px
+    line-height 19px
+    color #fff
+    text-align center
+
+.featured-header
+  margin-top 22px
+  margin-bottom 21px
+  color #fff
+  font-family "Bebas"
+  font-size 31px
+  line-height 25px
+  text-align center
+  
+.products
+  background #fff
+
+@import '../components/product.styl'

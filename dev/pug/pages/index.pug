@@ -1,0 +1,42 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Главная страница'
+
+block content
+  .main-carousel
+    each val in [1, 2, 3, 4, 5]
+      .main-carousel__item-wrapper
+        .main-carousel__item
+          .main-carousel__image-wrapper
+            img.main-carousel__image(src="../../static/img/content/levis.png" alt="Levis T-Shirt")
+          h2.main-carousel__title Cowhide #[br]Standart Crew #{val}
+          .main-carousel__description White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.
+          button.main-carousel__button Shop Now
+
+  .sub-carousel__wrapper
+    button.sub-carousel__arrow
+      +icon('arrow', 'sub-carousel__prev')    
+    .sub-carousel
+      each item in content.subCarousel
+        .sub-carousel__item
+          .sub-carousel__image-wrapper
+            img.sub-carousel__image(src= item.image alt="Levis T-Shirt")
+          .sub-carousel__info
+            h2.sub-carousel__title= item.title
+            a.sub-carousel__shop-btn(href= item.link) Shop
+    button.sub-carousel__arrow
+      +icon('arrow', 'sub-carousel__next')
+
+  h2.featured-header Featured Products
+  .products
+    each item in content.featured
+      .product
+        img.product__image(src= item.image)
+        .product__title= item.title
+        .product__order-block
+          .product__price= item.price
+          a.product__order-button(href="#") Buy Now
+
+block script
+  script(src="static/js/slick.min.js")

@@ -1,0 +1,74 @@
+@import 'fonts.styl'
+@import 'libs.styl'
+@import 'utils/mixins.styl'
+@import 'utils/slick.css'
+@import 'utils/slick-theme.css'
+@import 'common_styles.styl'
+
+html
+  line-height 1.3
+  font-size 16px
+
+body
+  font-family "OpenSans"
+
+h1,h2,h3,h4,h5,h6
+  margin 0
+
+ul,li
+  margin 0
+  padding 0
+  list-style-type none
+
+p
+  margin 0
+
+a
+  text-decoration none
+  color black
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+  vertical-align middle
+
+textarea
+  resize none
+
+section
+  position relative
+
+input,
+select,
+button
+  outline none
+
+
+*, *:before, *:after
+  box-sizing border-box
+
+@import 'modules/header/header.styl'
+@import 'pages/index.styl'
+@import 'modules/footer/footer.styl'
+
+@media screen and (min-width: 480px)
+  @import 'modules/header/header480.styl'
+  @import 'pages/index480.styl'
+
+@media screen and (min-width: 768px)
+  @import 'modules/header/header768.styl'
+  @import 'pages/index768.styl'
+  @import 'modules/footer/footer768.styl'
+  
+@media screen and (min-width: 992px)
+  @import 'modules/header/header992.styl'
+  @import 'pages/index992.styl'
+  @import 'modules/footer/footer992.styl'
+
+@media screen and (min-width: 1280px)
+  @import 'common_styles1280.styl'
+  @import 'modules/header/header1280.styl'
+  @import 'pages/index1280.styl'

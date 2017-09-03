@@ -1,0 +1,21 @@
+header.header
+  a.header__brand(href="#") Aditii
+  .header__search.search
+    form.search__form
+      input.search__input
+      .search__icon-wrapper
+        +icon('search', 'search__icon')
+  .header__cart.cart
+    .cart__icon-wrapper
+      +icon('cart', 'cart__icon')
+    .cart__total $300
+  button.header__hamburger &#9776;
+  button.header__cross &#735;
+nav.nav
+  ul.nav__list
+    each link, item in nav.navPages
+      li.nav__item
+        if (item === "Contact Us")
+          a.nav__link.nav__link_no-border(href= link)= item
+        else
+          a.nav__link(href= link)= item

@@ -1,0 +1,9 @@
+.footer
+  .footer__menu
+    each links, category in footer.footer
+      ul.footer__links
+        h3.footer__title= category
+        each link in links
+          li.footer__item
+            a.footer__link(href="#")= link
+  .footer__copy Copyright © 2013 Css Author
